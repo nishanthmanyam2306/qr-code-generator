@@ -1,12 +1,12 @@
+# QR Maker
+
+A browser-only QR code generator built with React and Vite. No backend: everything, including the saved "recent codes", stays in your browser.
+
 ## Screenshots
 
 ![QR Maker home page](screenshots/home.png)
 ![Dark theme view](screenshots/darktheme.png)
 
-
-# QR Maker
-
-A browser-only QR code generator built with React and Vite. No backend: everything, including the saved "recent codes", stays in your browser.
 
 ## Features
 
