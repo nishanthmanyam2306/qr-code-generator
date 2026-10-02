@@ -1,7 +1,7 @@
 ## Screenshots
 
 ![QR Maker home page](screenshots/home.png)
-![Mobile view](screenshots/mobile.png)
+![Dark theme view](screenshots/darktheme.png)
 
 
 # QR Maker
