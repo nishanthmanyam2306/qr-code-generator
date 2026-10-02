@@ -1,0 +1,51 @@
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 18px 56px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.app-header h1 {
+  font-size: clamp(2.1rem, 5vw, 3.3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.tagline {
+  margin: 8px 0 0;
+  max-width: 56ch;
+  color: var(--muted);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  grid-template-areas:
+    'input preview'
+    'style preview'
+    'recent recent';
+  gap: 20px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.area-input { grid-area: input; }
+.area-style { grid-area: style; }
+.area-recent { grid-area: recent; }
+.area-preview {
+  grid-area: preview;
+  align-self: start;
+  position: static;
+}

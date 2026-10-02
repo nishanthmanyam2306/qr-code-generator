@@ -1,0 +1,91 @@
+:root {
+  --bg: #edeff7;
+  --panel: #ffffff;
+  --soft: #f4f5fb;
+  --ink: #141a35;
+  --muted: #566080;
+  --line: #c9cfe3;
+  --accent: #3b36e8;
+  --accent-ink: #ffffff;
+  --danger: #b3261e;
+  --danger-bg: #fde8e6;
+  --warn: #7a4e00;
+  --warn-bg: #fff3d1;
+  --info: #2c3a8a;
+  --info-bg: #e6eaff;
+  --ok: #17603a;
+  --ok-bg: #e0f4e8;
+  --radius: 12px;
+  --font: "Bricolage Grotesque", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --bg: #0d1020;
+  --panel: #161a30;
+  --soft: #1d2240;
+  --ink: #e9ecfa;
+  --muted: #9aa4c6;
+  --line: #2c3458;
+  --accent: #8e8cff;
+  --accent-ink: #0d1020;
+  --danger: #ff9a92;
+  --danger-bg: #3a1c24;
+  --warn: #ffd37a;
+  --warn-bg: #3a2f14;
+  --info: #b4c0ff;
+  --info-bg: #1f2650;
+  --ok: #8fe0b2;
+  --ok-bg: #153427;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body { margin: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1, h2 { margin: 0; line-height: 1.15; }
+h2 { font-size: 1.15rem; font-weight: 600; margin-bottom: 14px; }
+
+input, select, textarea, button { font: inherit; color: inherit; }
+
+input[type='text'], input[type='email'], input[type='tel'], input[type='password'], select, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--panel);
+  border: 1.5px solid var(--line);
+  border-radius: 8px;
+}
+
+textarea { resize: vertical; }
+
+input[aria-invalid='true'], textarea[aria-invalid='true'], select[aria-invalid='true'] {
+  border-color: var(--danger);
+}
+
+input[type='range'] { width: 100%; accent-color: var(--accent); }
+input[type='checkbox'] { accent-color: var(--accent); width: 18px; height: 18px; margin: 0; }
+
+input[type='color'] {
+  width: 100%;
+  height: 42px;
+  padding: 3px;
+  background: var(--panel);
+  border: 1.5px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}

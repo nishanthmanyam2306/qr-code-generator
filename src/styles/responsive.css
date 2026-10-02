@@ -1,0 +1,22 @@
+@media (max-width: 820px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'input'
+      'preview'
+      'style'
+      'recent';
+  }
+  .area-preview { position: static; }
+}
+
+@media (max-width: 520px) {
+  .app { padding: 18px 12px 40px; }
+  .app-header { flex-direction: column; }
+  .card { padding: 16px; }
+  .row-2 { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .frame { padding: 20px; }
+  .seg { padding: 8px 10px; }
+  .recent-list { grid-template-columns: 1fr; }
+  .actions .btn { flex-basis: 100%; }
+}
